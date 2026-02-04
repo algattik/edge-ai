@@ -101,7 +101,6 @@ module "cloud_security_identity" {
   should_enable_public_network_access      = var.should_enable_key_vault_public_network_access
   should_create_aks_identity               = var.should_create_aks_identity
   should_create_ml_workload_identity       = var.azureml_should_create_ml_workload_identity
-    should_use_current_user_key_vault_admin  = false
 }
 
 module "cloud_vpn_gateway" {
